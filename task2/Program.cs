@@ -10,11 +10,15 @@
     {
         void ILogger.Event(string message)
         {
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("[Event] " + message);
+            Console.ForegroundColor = ConsoleColor.White;
         }
         void ILogger.Error(string message)
         {
-               Console.WriteLine("[Error] " + message);
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("[Error] " + message);
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 
