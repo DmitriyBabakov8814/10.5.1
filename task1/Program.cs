@@ -1,6 +1,5 @@
 ﻿namespace task1
 {
-
     public interface ISumm
     {
         double Summ(double x, double y);
@@ -15,12 +14,10 @@
         }
     }
 
-
     internal class Program
     {
         static void Main(string[] args)
         {
-
             try
             {
                 Console.WriteLine("Введите число x");
@@ -28,7 +25,6 @@
                 Console.WriteLine("Введите число y");
                 double y = double.Parse(Console.ReadLine());
                 ISumm summ = new Summ();
-
                 Console.WriteLine($"Cумма {x} + {y} = " + summ.Summ(x, y));
             }
 
